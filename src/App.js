@@ -15,36 +15,39 @@ import Register from './components/Authentication/Register/Register';
 import MyOrders from './components/MyOrders/MyOrders';
 import ManageOrders from './components/ManageOrders/ManageOrders';
 import AddOrders from './components/AddOrders/AddOrders';
+import AuthProvider from './AuthProvider/AuthProvider';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <MenuBar></MenuBar>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-          <Route path="/myOrders">
-            <MyOrders />
-          </Route>
-          <Route path="/manageOrders">
-            <ManageOrders />
-          </Route>
-          <Route path="/addOrders">
-            <AddOrders />
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <MenuBar></MenuBar>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/myOrders">
+              <MyOrders />
+            </Route>
+            <Route path="/manageOrders">
+              <ManageOrders />
+            </Route>
+            <Route path="/addOrders">
+              <AddOrders />
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
