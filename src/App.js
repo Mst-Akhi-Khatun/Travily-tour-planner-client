@@ -9,6 +9,12 @@ import {
 } from "react-router-dom";
 import MenuBar from './components/Header/MenuBar/MenuBar';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
+import Login from './components/Authentication/Login/Login';
+import Register from './components/Authentication/Register/Register';
+import MyOrders from './components/MyOrders/MyOrders';
+import ManageOrders from './components/ManageOrders/ManageOrders';
+import AddOrders from './components/AddOrders/AddOrders';
 function App() {
   return (
     <div className="App">
@@ -21,7 +27,23 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/myOrders">
+            <MyOrders />
+          </Route>
+          <Route path="/manageOrders">
+            <ManageOrders />
+          </Route>
+          <Route path="/addOrders">
+            <AddOrders />
+          </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
