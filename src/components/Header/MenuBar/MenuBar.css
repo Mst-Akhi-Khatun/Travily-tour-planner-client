@@ -1,0 +1,14 @@
+.a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #7a7983;
+}
+
+.a:hover {
+  color: #eb4b1a;
+}
+.fab {
+  color: #eb4b1a;
+  padding: 0 10px;
+  margin: 0 10px;
+}

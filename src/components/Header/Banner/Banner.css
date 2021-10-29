@@ -1,0 +1,6 @@
+.banner-section {
+  background-image: url("../../../images/Banner/banner.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
