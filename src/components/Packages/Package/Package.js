@@ -8,7 +8,7 @@ const Package = () => {
     console.log(packages);
     return (
         <div className="py-5 text-center bg-light">
-            <h1>Our<span className="text-warning"> Tour Packages</span></h1>
+            <h1 className="text-uppercase">Our<span className="text-warning"> Tour Packages</span></h1>
             <p>THE BEST RECOMMENDATION</p>
             <Row xs={1} md={3} className="g-4 container mx-auto my-5">
                 {
@@ -20,9 +20,10 @@ const Package = () => {
                                 <Card.Text>
                                     {pk?.description}
                                 </Card.Text>
+                                <h5>Price: ${pk?.price}</h5>
                             </Card.Body>
                             <Link to={`/detail/${pk?.id}`} className="mx-auto mb-3">
-                                <Button variant="warning" className="rounded-pill px-4 text-white">Booking Now</Button>
+                                <Button variant="warning" className="rounded-pill px-4 text-white">Book Now</Button>
                             </Link>
                         </Card>
                     </Col>)

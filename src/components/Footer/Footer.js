@@ -1,12 +1,11 @@
 import React from 'react';
-import image from '../../images/logo-5.png';
 
 const Footer = () => {
     return (
         <div className="footer-container bg-dark text-light p-4 pt-5">
             <div className="row">
                 <div className="col-md-5 text-start ps-5">
-                    <img src={image} alt="" width="100" />
+
                     <h4 className="text-uppercase">
                         <span className="text-warning">travily</span> tour planner
                     </h4>

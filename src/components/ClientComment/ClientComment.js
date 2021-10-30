@@ -3,7 +3,7 @@ import React from 'react';
 const ClientComment = () => {
     return (
         <div className="container text-center my-5">
-            <h1 className="pb-4">What They’re Saying</h1>
+            <h1 className="pb-4 text-uppercase">What They’re Saying</h1>
 
             <div className="row row-cols-1 row-cols-md-4 g-4">
                 <div className="col">
