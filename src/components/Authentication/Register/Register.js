@@ -18,6 +18,7 @@ const Register = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         data.status = 'pending';
+        data.img = booking.img;
         fetch('http://localhost:5000/bookPackage', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, Col, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import usePackage from '../../hooks/usePackage';
+import useAuth from '../../hooks/useAuth';
 
 const MyOrders = () => {
-    const [packages, setPackages] = usePackage();
+    const [myPackages, setMyPackages] = useState([]);
+    const { user } = useAuth();
+    const email = user?.email;
+    useEffect(() => {
+        fetch(`http://localhost:5000/myPackages/${email}`)
+            .then(res => res.json())
+            .then(data => setMyPackages(data))
+    }, [email])
+
     return (
         <div className="container-fluid my-5">
             <h1>My All <span className="text-warning">Orders</span> Are Here</h1>
             <Row xs={1} md={4} className="g-4 mx-auto my-5">
                 {
-                    packages.map(pk => <Col>
+                    myPackages.map(pk => <Col>
                         <Card>
                             <Card.Img variant="top" className="w-50 mx-auto pt-3" height="180px" src={pk?.img} />
                             <Card.Body className="text-center">
-                                <Card.Title>{pk?.name}</Card.Title>
+                                <Card.Title>{pk?.package}</Card.Title>
                                 <Card.Text>
-                                    {pk?.description}
+                                    {pk?.status}
                                 </Card.Text>
                                 <h5>Price: ${pk?.price}</h5>
                             </Card.Body>

@@ -23,6 +23,7 @@ const MenuBar = () => {
                             <Link className="a" to="/myOrders">My Orders</Link>
                             <Link className="a" to="/manageOrders">Manage Orders</Link>
                             <Link className="a" to="/addOrders">Add Orders</Link>
+                            <span className="text-warning me-1">{user?.displayName}</span>
                             <button onClick={logOut} className="btn btn-danger me-2 py-1">Log Out</button>
                         </div> :
                             <div className="d-flex align-items-center">
