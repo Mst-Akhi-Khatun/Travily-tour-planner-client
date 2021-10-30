@@ -33,7 +33,7 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/register">
+            <Route path="/register/:id">
               <Register />
             </Route>
             <Route path="/myOrders">

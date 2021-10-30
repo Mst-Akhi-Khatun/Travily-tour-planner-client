@@ -22,7 +22,7 @@ const Package = () => {
                                 </Card.Text>
                                 <h5>Price: ${pk?.price}</h5>
                             </Card.Body>
-                            <Link to={`/detail/${pk?.id}`} className="mx-auto mb-3">
+                            <Link to={`/register/${pk?._id}`} className="mx-auto mb-3">
                                 <Button variant="warning" className="rounded-pill px-4 text-white">Book Now</Button>
                             </Link>
                         </Card>
