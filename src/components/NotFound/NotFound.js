@@ -7,7 +7,7 @@ const NotFound = () => {
         <div className="py-5 container">
             <img src={image} alt="" className="w-100" />
             <Link to="/home">
-                <button className="btn btn-warning mt-3">BACK TO HOME</button>
+                <button className="btn btn-warning mt-3">RETURN TO HOME PAGE</button>
             </Link>
         </div>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
@@ -19,10 +20,10 @@ const Login = () => {
         <div className="container d-flex justify-content-center py-5">
             <div className="w-50 border px-4 py-5 shadow-sm">
                 <h1>Login With</h1>
-                <button onClick={handleSignIn} className="btn btn-info form-control my-3 text-white">
+                <button onClick={handleSignIn} className="btn btn-warning form-control my-3 text-white">
                     <img src="https://i.ibb.co/93GM0Qf/34-345914-continue-with-google-white-g-logo-clipart-removebg-preview.png" className="me-2" width="25px" alt="" />
                     Login With Google</button>
-                <p>Dont have an account? <a href="">Create an account</a> </p>
+                <p>Dont have an account? <Link to="/register" className="text-warning">Create an account</Link> </p>
             </div>
         </div>
     );

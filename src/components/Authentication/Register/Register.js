@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { Link } from 'react-router-dom';
 
 const Register = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -16,6 +17,7 @@ const Register = () => {
 
                     <input className="mt-4 btn-warning form-control" type="submit" value="Registration" />
                 </form>
+                <p className="mt-3">Already have an account? <Link to="/login" className="text-warning">Login</Link></p>
             </div>
         </div>
     );

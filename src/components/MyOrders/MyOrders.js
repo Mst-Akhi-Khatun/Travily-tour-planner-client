@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [packages, setPackages] = usePackage();
     return (
         <div className="container-fluid my-5">
-            <h1>My All Orders Are Here</h1>
+            <h1>My All <span className="text-warning">Orders</span> Are Here</h1>
             <Row xs={1} md={4} className="g-4 mx-auto my-5">
                 {
                     packages.map(pk => <Col>
@@ -18,6 +18,7 @@ const MyOrders = () => {
                                 <Card.Text>
                                     {pk?.description}
                                 </Card.Text>
+                                <h5>Price: ${pk?.price}</h5>
                             </Card.Body>
                             <Link to={`/detail/${pk?.id}`} className="mx-auto mb-3">
                                 <Button variant="danger" className="rounded-pill px-4 text-white">Remove</Button>
