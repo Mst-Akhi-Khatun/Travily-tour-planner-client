@@ -8,7 +8,8 @@ const Package = () => {
     console.log(packages);
     return (
         <div className="py-5 text-center bg-light">
-            <h1><span className="text-info">Services</span> We Provide</h1>
+            <h1>Our<span className="text-warning"> Tour Packages</span></h1>
+            <p>THE BEST RECOMMENDATION</p>
             <Row xs={1} md={3} className="g-4 container mx-auto my-5">
                 {
                     packages.map(pk => <Col>
