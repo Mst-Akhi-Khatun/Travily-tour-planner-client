@@ -1,6 +1,9 @@
 .banner-section {
-  background-image: url("../../../images/Banner/banner.jpg");
-  height: 500px;
+  background-image: url("../../../images/Banner/banner-4.jpg");
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.text {
+  font-size: 90px;
 }

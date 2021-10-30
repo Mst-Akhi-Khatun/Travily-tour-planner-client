@@ -3,8 +3,14 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className="banner-section">
-            <h1>Get Ready To Travel The World</h1>
+        <div className="banner-section d-flex justify-content-center align-items-center text-uppercase">
+            <div className="text-white">
+                <h2>WELCOME TO
+                </h2>
+                <h1 className="text-white d-inline-block px-3 py-2 mt-2 text fw-bolder"> travily <span className=""> tour planner</span></h1>
+                <p className="fs-4 fst-italic">Get Ready To Travel The World</p>
+
+            </div>
         </div>
     );
 };

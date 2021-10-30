@@ -5,21 +5,21 @@ const Footer = () => {
     return (
         <div className="footer-container bg-dark text-light p-4 pt-5">
             <div className="row">
-                <div className="col-md-5">
+                <div className="col-md-5 text-start ps-5">
                     <img src={image} alt="" width="100" />
-                    <h4>
-                        <span className="text-primary">Education Care</span> Coaching Centre
+                    <h4 className="text-uppercase">
+                        <span className="text-warning">travily</span> tour planner
                     </h4>
                     <h6 className="fw-normal">AR Plaza,Dhaka, Bangladesh..</h6>
                     <h3>Subscribe Us Now:</h3>
                     <div class="input-group w-75">
                         <input type="text" className="form-control" placeholder="your email address" />
-                        <button className="btn btn-primary" type="button">Subscribe</button>
+                        <button className="btn btn-warning" type="button">Subscribe</button>
                     </div>
                     <p className="mt-3">Thanks for subscribing us.</p>
                 </div>
 
-                <div className="col-md-5 text-start">
+                <div className="col-md-5 text-start ps-5">
                     <h3>Need Help ?</h3>
                     <p>call us <br /> <h5>01736454</h5> </p>
                     <p>Email for Us<br /> <h5>Mail: abc @gmail.com</h5> </p>
