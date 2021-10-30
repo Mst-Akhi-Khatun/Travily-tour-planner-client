@@ -16,6 +16,7 @@ import MyOrders from './components/MyOrders/MyOrders';
 import ManageOrders from './components/ManageOrders/ManageOrders';
 import AddOrders from './components/AddOrders/AddOrders';
 import AuthProvider from './AuthProvider/AuthProvider';
+import NotFound from './components/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route path="/addOrders">
               <AddOrders />
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>
