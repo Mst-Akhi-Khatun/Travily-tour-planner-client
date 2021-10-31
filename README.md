@@ -11,8 +11,8 @@ Visit our server site for more information: [Click here to visit](https://travil
 ## Site description:
 
 <ul>
-    <li>Travily Tour Planner has 6t tour package.</li>
-    <li>Contains 4 private.</li>
+    <li>Travily Tour Planner has 6 tour packages.</li>
+    <li>Contains 4 private route.</li>
     <li>Google authentication has been done.</li>
     <li>The client's comments are shown here.</li>
     <li>Ordered package has been revisited.</li>
