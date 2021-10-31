@@ -4,12 +4,13 @@ import { useForm } from "react-hook-form";
 import { useParams } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 
-
+// this is register section
 const Register = () => {
     const { user } = useAuth();
     const { id } = useParams();
     const [booking, setBooking] = useState({});
 
+    // use effect
     useEffect(() => {
         fetch(`https://travily-tour-planner.herokuapp.com/booking/${id}`)
             .then(res => res.json())
@@ -75,7 +76,6 @@ const Register = () => {
 
                                 <input className="form-control mt-4" {...register("price", { required: true })} defaultValue={booking?.price} />
                                 {errors.price && <span className="text-success">Rechecking</span>}
-
 
                                 <input className="mt-4 btn-warning form-control" type="submit" value="Registration" />
                             </form>

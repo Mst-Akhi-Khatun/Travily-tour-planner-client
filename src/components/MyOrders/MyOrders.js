@@ -4,15 +4,17 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const MyOrders = () => {
+    // this is my order
     const [myPackages, setMyPackages] = useState([]);
     const [remove, setRemove] = useState(false);
     const { user } = useAuth();
     const email = user?.email;
+
     useEffect(() => {
         fetch(`https://travily-tour-planner.herokuapp.com/myPackages/${email}`)
             .then(res => res.json())
             .then(data => setMyPackages(data))
-    }, [remove, email])
+    }, [remove, email])  //dependencies
 
     const handleRemovePackage = id => {
         const proceed = window.confirm("Sure want to remove?");

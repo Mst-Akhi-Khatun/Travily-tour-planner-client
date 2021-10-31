@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 
 const ManageOrders = () => {
+    // manage order section
     const [allBookings, setAllBookings] = useState([]);
     const [remove, setRemove] = useState(false);
     const [booking, setBooking] = useState({})

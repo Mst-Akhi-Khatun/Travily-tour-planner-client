@@ -3,6 +3,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChang
 import { useState, useEffect } from 'react';
 import initializeAuth from "../Firebase/firebase.init";
 initializeAuth();
+
 const useFirebase = () => {
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -19,7 +20,6 @@ const useFirebase = () => {
             })
             .finally(() => { setLoading(false) })
     }
-
 
 
     useEffect(() => {

@@ -5,6 +5,7 @@ import Banner from '../Header/Banner/Banner';
 import Package from '../Packages/Package/Package';
 
 const Home = () => {
+    // home section
     return (
         <div>
             <Banner></Banner>

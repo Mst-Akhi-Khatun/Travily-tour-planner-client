@@ -3,6 +3,7 @@ import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
+// login section
 const Login = () => {
     const { user, googleSignIn } = useAuth();
     const history = useHistory();

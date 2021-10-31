@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import usePackage from '../../../hooks/usePackage';
 
 const Package = () => {
+    // packages section
     const [packages, setPackages] = usePackage();
-    console.log(packages);
+
     return (
         <div className="py-5 text-center bg-light">
             <h1 className="text-uppercase">Our<span className="text-warning"> Tour Packages</span></h1>

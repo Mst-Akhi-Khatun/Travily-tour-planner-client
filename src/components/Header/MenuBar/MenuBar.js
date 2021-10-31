@@ -6,6 +6,7 @@ import images from '../../../images/logo-7.png';
 import './MenuBar.css';
 
 const MenuBar = () => {
+    // menubar section
     const { user, logOut } = useAuth();
     return (
         <div>
@@ -41,8 +42,6 @@ const MenuBar = () => {
                                     </Link>
                                 </div>
                         }
-
-
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

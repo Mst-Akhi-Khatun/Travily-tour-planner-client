@@ -1,6 +1,7 @@
 import React from 'react';
 
 const ClientComment = () => {
+    // this is client comment section
     return (
         <div className="container text-center my-5">
             <h1 className="pb-4 text-uppercase">What They’re Saying</h1>
@@ -16,7 +17,9 @@ const ClientComment = () => {
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </p>
-                        <p>this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit</p>
+                        <p>
+                            this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit
+                        </p>
                         <h5>Shirley Smith</h5>
                         <h6 className="text-danger">CUSTOMAR</h6>
                     </div>
@@ -32,7 +35,9 @@ const ClientComment = () => {
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </p>
-                        <p>this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit</p>
+                        <p>
+                            this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit
+                        </p>
                         <h5>kevin Marthin</h5>
                         <h6 className="text-danger">CUSTOMAR</h6>
                     </div>
@@ -47,7 +52,9 @@ const ClientComment = () => {
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </p>
-                        <p>this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit</p>
+                        <p>
+                            this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit
+                        </p>
                         <h5>Jessica Brown</h5>
                         <h6 className="text-danger">CUSTOMAR</h6>
                     </div>
@@ -62,7 +69,9 @@ const ClientComment = () => {
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </p>
-                        <p>this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit</p>
+                        <p>
+                            this is due to their best service,pricing and customar support. it's throughly refresing to such a personal touch.Duis aute irure lupsum reprehenderit
+                        </p>
                         <h5>Shirley Smith</h5>
                         <h6 className="text-danger">CUSTOMAR</h6>
                     </div>

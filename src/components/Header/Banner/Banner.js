@@ -2,6 +2,7 @@ import React from 'react';
 import './Banner.css';
 
 const Banner = () => {
+    // this is banner section
     return (
         <div className="banner-section d-flex justify-content-center align-items-center text-uppercase">
             <div className="text-white px-2">
