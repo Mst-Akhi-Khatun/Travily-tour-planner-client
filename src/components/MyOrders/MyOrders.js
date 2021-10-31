@@ -15,7 +15,7 @@ const MyOrders = () => {
 
     return (
         <div className="container-fluid my-5">
-            <h1>My All <span className="text-warning">Orders</span> Are Here</h1>
+            <h1>My Booked <span className="text-warning">Packages</span> Are Here</h1>
             <Row xs={1} md={4} className="g-4 mx-auto my-5">
                 {
                     myPackages.map(pk => <Col>
