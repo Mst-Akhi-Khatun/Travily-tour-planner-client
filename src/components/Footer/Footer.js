@@ -29,7 +29,7 @@ const Footer = () => {
 
                 </div>
 
-                <div className="col-md-2 text-start">
+                <div className="col-md-2 text-start ps-5">
                     <h3>Platform</h3>
                     <p>Partners</p>
                     <p>News & Blogs</p>

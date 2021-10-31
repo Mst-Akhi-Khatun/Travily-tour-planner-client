@@ -17,13 +17,17 @@ const Login = () => {
     }
 
     return (
-        <div className="container d-flex justify-content-center py-5">
-            <div className="w-50 border px-4 py-5 shadow-sm">
-                <h1>Login Form</h1>
-                <button onClick={handleSignIn} className="btn btn-warning form-control my-3 text-white">
-                    <img src="https://i.ibb.co/93GM0Qf/34-345914-continue-with-google-white-g-logo-clipart-removebg-preview.png" className="me-2" width="25px" alt="" />
-                    Login With Google</button>
-                <p>Continue with Google sign in</p>
+        <div className="container py-5">
+            <div className="row">
+                <div className="col-md-3"></div>
+                <div className="col-md-6 border px-5 py-5 shadow-sm">
+                    <h1>Login Form</h1>
+                    <button onClick={handleSignIn} className="btn btn-warning form-control my-3 text-white">
+                        <img src="https://i.ibb.co/93GM0Qf/34-345914-continue-with-google-white-g-logo-clipart-removebg-preview.png" className="me-2" width="25px" alt="" />
+                        Login With Google</button>
+                    <p>Continue with Google sign in</p>
+                </div>
+                <div className="col-md-3"></div>
             </div>
         </div>
     );

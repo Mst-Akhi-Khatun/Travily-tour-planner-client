@@ -9,14 +9,14 @@ const MenuBar = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <Navbar className="px-3">
+            <Navbar collapseOnSelect expand="lg" className="px-3 d-flex">
                 <Navbar.Brand className="d-flex align-items-center">
-                    <img src={images} alt="" width="80px" />
-                    <h3 className="text-warning text-uppercase">travily tour planner</h3>
+                    <img src={images} alt="" width="40px" height="30px" />
+                    <h6 className="text-warning text-uppercase ms-1">travily tour planner</h6>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto d-flex">
                         <div className="pt-1">
                             <Link className="a" to="/home">Home</Link>
                         </div>
