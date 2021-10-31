@@ -17,6 +17,7 @@ import ManageOrders from './components/ManageOrders/ManageOrders';
 import AddOrders from './components/AddOrders/AddOrders';
 import AuthProvider from './AuthProvider/AuthProvider';
 import NotFound from './components/NotFound/NotFound';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 function App() {
   return (
     <div className="App">
@@ -33,18 +34,18 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/register/:id">
+            <PrivateRoute path="/register/:id">
               <Register />
-            </Route>
-            <Route path="/myOrders">
+            </PrivateRoute>
+            <PrivateRoute path="/myOrders">
               <MyOrders />
-            </Route>
-            <Route path="/manageOrders">
+            </PrivateRoute>
+            <PrivateRoute path="/manageOrders">
               <ManageOrders />
-            </Route>
-            <Route path="/addOrders">
+            </PrivateRoute>
+            <PrivateRoute path="/addOrders">
               <AddOrders />
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
