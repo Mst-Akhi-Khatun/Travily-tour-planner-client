@@ -29,7 +29,7 @@ const MyOrders = () => {
                                 <h5>Price: ${pk?.price}</h5>
                             </Card.Body>
                             <Link to={`/detail/${pk?.id}`} className="mx-auto mb-3">
-                                <Button variant="danger" className="rounded-pill px-4 text-white">Remove</Button>
+                                <Button variant="warning" className="rounded-pill px-4 text-white">Remove</Button>
                             </Link>
                         </Card>
                     </Col>)

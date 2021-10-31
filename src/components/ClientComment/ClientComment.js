@@ -8,7 +8,7 @@ const ClientComment = () => {
             <div className="row row-cols-1 row-cols-md-4 g-4">
                 <div className="col">
                     <div>
-                        <img src="https://tevily-html.vercel.app/assets/images/testimonial/testimonial-one-img-1.png" className="rounded-circle" alt="..." />
+                        <img src="https://i.ibb.co/1dBPLm2/comment-1.png" className="rounded-circle" alt="..." />
                         <p className="text-warning mt-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -23,7 +23,7 @@ const ClientComment = () => {
                 </div>
                 <div className="col">
                     <div>
-                        <img src="https://tevily-html.vercel.app/assets/images/testimonial/testimonial-one-img-2.png" className="rounded-circle" alt="..." />
+                        <img src="https://i.ibb.co/12bHkwL/comment-2.png" className="rounded-circle" alt="..." />
 
                         <p className="text-warning mt-4">
                             <i class="fas fa-star"></i>
@@ -39,7 +39,7 @@ const ClientComment = () => {
                 </div>
                 <div className="col">
                     <div>
-                        <img src="https://tevily-html.vercel.app/assets/images/testimonial/testimonial-one-img-3.png" alt="..." />
+                        <img src="https://i.ibb.co/xYxb6KS/comment-3.png" alt="..." />
                         <p className="text-warning mt-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -54,7 +54,7 @@ const ClientComment = () => {
                 </div>
                 <div className="col">
                     <div>
-                        <img src="http://jituchauhan.com/site-templates/medical-website-template/06_pathology_lab/images/team-1.jpg" className="rounded-circle" alt="..." />
+                        <img src="https://i.ibb.co/gMMXYCY/comment-4.jpg" className="rounded-circle" alt="..." />
                         <p className="text-warning mt-4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
