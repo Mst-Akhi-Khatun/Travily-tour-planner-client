@@ -16,7 +16,7 @@ const MenuBar = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto d-flex">
+                    <Nav id="basic-navbar" className="ms-auto d-flex">
                         <div className="pt-1">
                             <Link className="a" to="/home">Home</Link>
                         </div>
@@ -28,16 +28,16 @@ const MenuBar = () => {
                                 <span className="text-warning me-1">{user?.displayName}</span>
                                 <button onClick={logOut} className="btn btn-danger me-2 py-1">Log Out</button>
                             </div> :
-                                <div className="d-flex align-items-center">
+                                <div id="login-button" className="d-flex align-items-center">
                                     <Link className="a" to="/login">Login</Link>
                                     <Link to="">
-                                        <i className="fab fa-facebook text-warning fs-3"></i>
+                                        <i className="fab fa-facebook icon text-warning fs-3"></i>
                                     </Link>
                                     <Link to="">
-                                        <i className="fab fa-instagram-square text-warning fs-3 mx-2"></i>
+                                        <i className="fab fa-instagram-square icon text-warning fs-3 mx-2"></i>
                                     </Link>
                                     <Link to="">
-                                        <i className="fab fa-youtube text-warning fs-3"></i>
+                                        <i className="fab fa-youtube text-warning icon fs-3"></i>
                                     </Link>
                                 </div>
                         }

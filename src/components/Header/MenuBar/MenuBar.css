@@ -7,3 +7,17 @@
 .a:hover {
   color: orange;
 }
+
+@media only screen and (max-width: 768px) {
+  #basic-navbar a {
+    display: flex;
+    flex-direction: column;
+  }
+  #login-button {
+    display: flex;
+    justify-content: center;
+  }
+  .icon {
+    border-bottom: none;
+  }
+}

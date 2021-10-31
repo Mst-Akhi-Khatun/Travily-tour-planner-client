@@ -52,7 +52,7 @@ const ManageOrders = () => {
     return (
         <div className="container my-5">
             <h1 className="my-5">Manage All Orders</h1>
-            <Table striped bordered hover>
+            <Table responsive="sm" striped bordered hover>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -72,8 +72,8 @@ const ManageOrders = () => {
                             <td>{bookings?.package}</td>
                             <td>{bookings?.status}</td>
                             <td>
-                                <button onClick={() => handleStatus(bookings?._id)} className="btn btn-warning me-2">Approve</button>
-                                <button onClick={() => handleRemovePackage(bookings?._id)} className="btn btn-danger">Remove</button>
+                                <button onClick={() => handleRemovePackage(bookings?._id)} className="btn btn-danger mt-1 me-2">Remove</button>
+                                <button onClick={() => handleStatus(bookings?._id)} className="btn btn-warning mt-1 me-2">Approve</button>
 
                             </td>
                         </tr>)
