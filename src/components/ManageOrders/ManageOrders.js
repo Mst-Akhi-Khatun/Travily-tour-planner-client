@@ -4,17 +4,19 @@ import { Table } from 'react-bootstrap';
 const ManageOrders = () => {
     const [allBookings, setAllBookings] = useState([]);
     const [remove, setRemove] = useState(false);
+    const [booking, setBooking] = useState({})
+    const [updateStatus, setUpdateStatus] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allBookings')
+        fetch('https://travily-tour-planner.herokuapp.com/allBookings')
             .then(res => res.json())
             .then(data => setAllBookings(data))
-    }, [remove])
+    }, [remove, updateStatus])
 
     const handleRemovePackage = id => {
         const proceed = window.confirm("Sure want to remove?");
         if (proceed) {
-            fetch(`http://localhost:5000/myPackages/${id}`, {
+            fetch(`https://travily-tour-planner.herokuapp.com/myPackages/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -29,7 +31,23 @@ const ManageOrders = () => {
     }
 
     const handleStatus = id => {
+        fetch(`https://travily-tour-planner.herokuapp.com/allBookings/${id}`)
+            .then((res) => res.json())
+            .then((data) => setBooking(data));
+        setBooking(booking.status = "Approved");
 
+        fetch(`https://travily-tour-planner.herokuapp.com/allBookings/${id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(booking),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.modifiedCount > 0) {
+                    alert("Successfully Approved!");
+                    setUpdateStatus(!updateStatus)
+                }
+            });
     }
     return (
         <div className="container my-5">

@@ -9,7 +9,7 @@ const MyOrders = () => {
     const { user } = useAuth();
     const email = user?.email;
     useEffect(() => {
-        fetch(`http://localhost:5000/myPackages/${email}`)
+        fetch(`https://travily-tour-planner.herokuapp.com/myPackages/${email}`)
             .then(res => res.json())
             .then(data => setMyPackages(data))
     }, [remove, email])
@@ -17,7 +17,7 @@ const MyOrders = () => {
     const handleRemovePackage = id => {
         const proceed = window.confirm("Sure want to remove?");
         if (proceed) {
-            fetch(`http://localhost:5000/myPackages/${id}`, {
+            fetch(`https://travily-tour-planner.herokuapp.com/myPackages/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -42,7 +42,7 @@ const MyOrders = () => {
                             <Card.Body className="text-center">
                                 <Card.Title>{pk?.package}</Card.Title>
                                 <Card.Text>
-                                    {pk?.status}
+                                    Status: {pk?.status}
                                 </Card.Text>
                                 <h5>Price: ${pk?.price}</h5>
                             </Card.Body>
