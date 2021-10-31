@@ -62,8 +62,9 @@ const Register = () => {
                         <div className="col-md-3"></div>
                         <div className="col-md-6">
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input className="form-control" {...register("username", { required: true })} defaultValue={user?.displayName} />
-                                <input className="form-control my-4" {...register("email", { required: true })} defaultValue={user?.email} />
+                                {user?.displayName && <input className="form-control" {...register("username", { required: true })} defaultValue={user?.displayName} />}
+
+                                {user?.email && <input className="form-control my-4" {...register("email", { required: true })} defaultValue={user?.email} />}
 
                                 <input className="form-control" {...register("address", { required: true })} placeholder="Address" />
                                 {errors.address && <span className="text-danger">This field is required</span>}
@@ -71,11 +72,9 @@ const Register = () => {
                                 <input className="form-control mt-4" {...register("date", { required: true })} type="date" />
                                 {errors.date && <span className="text-danger">This field is required</span>}
 
-                                <input className="form-control mt-4" {...register("package", { required: true })} defaultValue={booking?.name} />
-                                {errors.package && <span className="text-success">Rechecking</span>}
+                                {booking?.name && <input className="form-control mt-4" {...register("package", { required: true })} defaultValue={booking?.name} />}
 
-                                <input className="form-control mt-4" {...register("price", { required: true })} defaultValue={booking?.price} />
-                                {errors.price && <span className="text-success">Rechecking</span>}
+                                {booking?.price && <input className="form-control mt-4" {...register("price", { required: true })} defaultValue={booking?.price} />}
 
                                 <input className="mt-4 btn-warning form-control" type="submit" value="Registration" />
                             </form>
