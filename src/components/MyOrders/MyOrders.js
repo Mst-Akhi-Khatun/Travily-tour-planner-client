@@ -46,7 +46,7 @@ const MyOrders = () => {
                                 </Card.Text>
                                 <h5>Price: ${pk?.price}</h5>
                             </Card.Body>
-                            <Button onClick={() => handleRemovePackage(pk?._id)} variant="danger" className="rounded-pill px-4 text-white w-50 mx-auto">Remove</Button>
+                            <Button onClick={() => handleRemovePackage(pk?._id)} variant="danger" className="rounded-pill px-4 text-white w-50 mx-auto mb-3">Remove</Button>
                         </Card>
                     </Col>)
                 }
